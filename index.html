@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				font-size: 22px;
+				font-family: sans-serif;
+			}
+
+			.container {
+				border: 1px solid black;
+				margin: 40px;
+				border-radius: 10px;
+				padding: 20px;
+				box-shadow: 0px 6px 8px 1px rgba(0, 79, 99, 1);
+			}
+
+			.heading {
+				font-size: 36px;
+				text-align: center;
+				background-color: lightblue;
+			}
+
+			.order-summary {
+				margin-top: 10px;
+			}
+
+			.order-summary-titles,
+			.order-details {
+				display: flex;
+				background-color: lightblue;
+			}
+
+			.order-details {
+				padding-top: 5px;
+			}
+
+			.order-summary-title,
+			.order-detail {
+				flex: 1;
+				text-align: center;
+			}
+
+			.order-form-row-two {
+				margin-top: 10px;
+			}
+
+			.input-label {
+				font-size: 18px;
+			}
+
+			.input-description {
+				font-size: 14px;
+			}
+
+			.flex {
+				display: flex;
+			}
+
+			.space-between {
+				justify-content: space-between;
+			}
+
+			input,
+			select,
+			textarea {
+				width: 175px;
+			}
+
+			.aqreewent {
+				padding: 0 20px;
+				font-size: 16px;
+				text-align: center;
+			}
+
+			.total-cost {
+				justify-content: flex-end;
+				font-size: 18px;
+				font-weight: bold;
+			}
+
+			.mt-20 {
+				margin-top: 20px;
+			}
+
+			button {
+				background-color: white;
+				border-color: gray;
+				padding: 10px;
+				border-width: 1px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: purple;
+				color: white;
+			}
+
+			.primary-button {
+				background-color: lightblue;
+			}
+		</style>
+
+		<div class="container">
+			<div class="heading">Your Order</div>
+
+			<div class="order-summary">
+				<div class="order-summary-titles">
+					<div class="order-summary-title">Order #</div>
+					<div class="order-summary-title">Customer</div>
+					<div class="order-summary-title">Items</div>
+				</div>
+				<div class="order-details">
+					<div class="order-detail">1234</div>
+					<div class="order-detail">John Smith</div>
+					<div class="order-detail">4</div>
+				</div>
+			</div>
+
+			<div class="order-form mt-20">
+				<div class="order-form-row-one flex space-between">
+					<div>
+						<!-- PhoneMobile -->
+						<div class="input-label">
+							<label for="phone-mobile">PhoneMobile*</label>
+						</div>
+						<div>
+							<input
+								type="text"
+								id="phone-mobile"
+								placeholder="###-###-####"
+								required
+							/>
+						</div>
+						<div class="input-description">* Must Fill</div>
+					</div>
+					<div>
+						<!-- Pickup Spre Locdion -->
+						<div class="input-label">
+							<label for="pickup-spre-locdion">Pickup Spre Locdion</label>
+						</div>
+						<div>
+							<select>
+								<option>1156G</option>
+								<option>1156F</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="order-form-row-two flex space-between">
+					<div>
+						<!-- Dropoff Notes -->
+						<div>
+							<textarea placeholder="Dropoff Notes" rows="3"></textarea>
+						</div>
+					</div>
+					<div>
+						<!-- Pickup Note -->
+						<div>
+							<textarea placeholder="Pickup Note" rows="3"></textarea>
+						</div>
+					</div>
+				</div>
+
+				<div class="aqreewent mt-20">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua.
+				</div>
+
+				<div class="total-cost flex mt-20">
+					<div>Total Cost</div>
+					<div style="margin-left: 20px">$11.99</div>
+				</div>
+
+				<div class="buttons flex space-between mt-20">
+					<div>
+						<button>Cancel</button>
+					</div>
+					<div>
+						<button class="primary-button">Submit Delivery Request</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
